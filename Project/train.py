@@ -109,7 +109,7 @@ class MyDSPNet(pl.LightningModule):
 model = MyDSPNet()
 
 # training
-trainer = pl.Trainer(gpus=1, num_nodes=1, max_epochs=45)
+trainer = pl.Trainer(gpus=1, num_nodes=1, max_epochs=50)
 trainer.fit(model, trainloader,)
 
 model = model.to(device)
